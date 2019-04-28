@@ -12,7 +12,7 @@
     <body>
         
         <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
-            <a href="#" class="navbar-brand"> Latitude</a>
+            <a href="index.html" class="navbar-brand"> Latitude</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,60 +33,40 @@
                         <a href="comparisons_page.html" class="nav-link active">Comparision</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="data_page.html" class="nav-link active">Data</a>
+                        <a href="data_page.html" class="nav-link">Data</a>
                     </li>
                     
                 </ul>
             </div>
         </nav>
 
-
-        
         <div class="container" style="margin-top:30px">
             <div class="row">
-              <div class="col-sm-7">
-                <h2>Summary Latitude Vs. X</h2>
-                <hr>
-                <img src="Images/Fig1.png" class="float-left rounded mx-auto d-block img-auto" style="min-width:300px; max-width:65%; height:auto;">
-                <p>The purpose of the project was to analyze weather changes as we get closer to the equator. To accomplish this analysis, we first pulled the data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                <p> After assembling the data set we used matplotlib to plot various aspect of the weather vs. latittude. Factors we looked at included: temperature, cloudiness, windspeed and humidity. This site also provides the source data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witness.</p>
-              </div>
-
-
-              <div class="col-sm-5">
-                <h2>Visualisation</h2>
-                <hr>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="MaxTemperature.html" class="thumbnail">
-                                <img src="Images/Fig1.png" class="figure-img img-fluid rounded" alt="City Latitude vs. Max Temperature">
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="Humidity.html" class="thumbnail">
-                             <img src="Images/Fig2.png" class="figure-img img-fluid rounded" alt="City Latitude vs. Humidity">
-                        </a>
-                    </div>
+                <div class="col-sm-12">
+                    <h2>Cloudiness</h2>
+                    <hr>
                 </div>
-                <div class="row">
-                        <div class="col-md-6">
-                            <a href="Cloudiness.html" class="thumbnail">
-                                <img src="Images/Fig3.png" class="figure-img img-fluid rounded" alt="City Latitude vs. Cloudiness">
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="WindSpeed.html" class="thumbnail">
-                                <img src="Images/Fig4.png" class="figure-img img-fluid rounded" alt="City Latitude vs. Windspeed">
-                            </a>
-                        </div>
-                    </div> 
             </div>
-          </div>
 
-          
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="Images/Fig3.png" class="figure-img img-fluid rounded" alt="City Latitude vs. Cloudiness">
+                </div>
 
-          <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year the data was gathered.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
             <div class="container">
                 <div class="navbar-text pull-left">
                     <p>© 2019 @abdulib</p>
